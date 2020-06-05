@@ -130,17 +130,17 @@ def save_summary(data, name):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('sav', type=float, default=.5)
-    parser.add_argument('sbv', type=float, default=.5)
-    parser.add_argument('nv', type=float, default=.1)
-    parser.add_argument('cv', type=float, default=.5)
-    parser.add_argument('taa', type=float, default=.5)
-    parser.add_argument('tbb', type=float, default=.5)
-    parser.add_argument('nodes', type=int, default=1000)
-    parser.add_argument('avgdeg', type=float, default=20)
-    parser.add_argument('iterations', type=int, default=50)
-    parser.add_argument('run_name', type = str, default='0')
-    parser.add_argument('folder', type = str, default='./')
+    parser.add_argument('--sav', type=float, default=.5)
+    parser.add_argument('--sbv', type=float, default=.5)
+    parser.add_argument('--nv', type=float, default=.1)
+    parser.add_argument('--cv', type=float, default=.5)
+    parser.add_argument('--taa', type=float, default=.5)
+    parser.add_argument('--tbb', type=float, default=.5)
+    parser.add_argument('--nodes', type=int, default=1000)
+    parser.add_argument('--avgdeg', type=float, default=20)
+    parser.add_argument('--iterations', type=int, default=50)
+    parser.add_argument('--run_name', type=str, default='0')
+    parser.add_argument('--folder', type=str, default='./')
     args = parser.parse_args()
 
     nv, sav, sbv, cv, taa, tbb, nodes, avgdeg, iterations, run_name, folder = [args.nv, args.sav, args.sbv, args.cv, args.taa, args.tbb, args.nodes, args.avgdeg, int(args.iterations), args.run_name, args.folder]

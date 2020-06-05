@@ -8,8 +8,9 @@
 #SBATCH -t 1:00:00
 #SBATCH --mem-per-cpu=2g
 
-module purge
-module load swig
-module load anaconda2
+#module purge
+#module load swig
+#module load anaconda2
 
-srun python $HOME/perception/perception_model.py --sav=$1 --sbv=$2 --nv=$3 --cv=$4 --iterations=$5 --run_name=$6 --folder=$7
+#srun
+python2 perception_model.py --sav=$1 --sbv=$2 --nv=$3 --cv=$4 --taa=.5 --tbb=.5 --nodes=2000 --avgdeg=20 --iterations=$5 --run_name=$6 --folder=$7
