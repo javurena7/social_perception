@@ -1,11 +1,11 @@
 #!/bin/bash
 
 i=0
-for sv in `seq 0 .025 1`:
+for sv in `seq 0 .025 1`
 do
-    for cv in `seq 0 .1 1`;
+    for cv in `seq 0 .1 1`
     do
-        for nv in `seq .1 .1 .5`;
+        for nv in `seq .1 .1 .5`
         do
             python2 perception_model.py --sav=$sv \
                 --sb=$sv \
